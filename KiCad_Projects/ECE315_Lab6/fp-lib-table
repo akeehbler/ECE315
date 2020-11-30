@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri C:/Users/aleck/Documents/Fall2020/ECE315/KiCad/Parts/DigiKey/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name ECE315)(type KiCad)(uri C:/Users/aleck/Documents/Fall2020/ECE315/KiCad/Parts/ECE315.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,308 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_USB-DVI-HDMI-Connectors:10118193-0001LF J?
+U 1 1 5F76702B
+P 2200 2950
+F 0 "J?" H 2264 3695 60  0000 C CNN
+F 1 "10118193-0001LF" H 2264 3589 60  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118193-0001LF" H 2400 3150 60  0001 L CNN
+F 3 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 2400 3250 60  0001 L CNN
+F 4 "609-4616-1-ND" H 2400 3350 60  0001 L CNN "Digi-Key_PN"
+F 5 "10118193-0001LF" H 2400 3450 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2400 3550 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 2400 3650 60  0001 L CNN "Family"
+F 8 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 2400 3750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/10118193-0001LF/609-4616-1-ND/2785380" H 2400 3850 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MICRO B SMD R/A" H 2400 3950 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 2400 4050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2400 4150 60  0001 L CNN "Status"
+	1    2200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ECE315:MCP2221A-I_SL U?
+U 1 1 5F7685CC
+P 5150 2650
+F 0 "U?" H 5150 3517 50  0000 C CNN
+F 1 "MCP2221A-I_SL" H 5150 3426 50  0000 C CNN
+F 2 "ECE315:SOIC127P600X175-14N" H 5150 2650 50  0001 L BNN
+F 3 "IPC7351B" H 5150 2650 50  0001 L BNN
+F 4 "Microchip" H 5150 2650 50  0001 L BNN "Field4"
+	1    5150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2850 2500 2850
+Wire Wire Line
+	4550 2950 2500 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5F76FCF2
+P 2800 3500
+F 0 "#PWR?" H 2800 3250 50  0001 C CNN
+F 1 "GND" H 2805 3327 50  0000 C CNN
+F 2 "" H 2800 3500 50  0001 C CNN
+F 3 "" H 2800 3500 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3050 2800 3050
+Wire Wire Line
+	2800 3050 2800 3150
+Wire Wire Line
+	2500 3150 2800 3150
+Connection ~ 2800 3150
+Wire Wire Line
+	2800 3150 2800 3500
+$Comp
+L power:+5V #PWR?
+U 1 1 5F7704A1
+P 3050 2400
+F 0 "#PWR?" H 3050 2250 50  0001 C CNN
+F 1 "+5V" H 3065 2573 50  0000 C CNN
+F 2 "" H 3050 2400 50  0001 C CNN
+F 3 "" H 3050 2400 50  0001 C CNN
+	1    3050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2400 3050 2750
+Wire Wire Line
+	3050 2750 2500 2750
+NoConn ~ 4550 2650
+NoConn ~ 4550 2550
+NoConn ~ 5750 2650
+NoConn ~ 5750 2750
+NoConn ~ 5750 2850
+NoConn ~ 5750 2950
+NoConn ~ 5750 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5F770E88
+P 6000 3400
+F 0 "#PWR?" H 6000 3150 50  0001 C CNN
+F 1 "GND" H 6005 3227 50  0000 C CNN
+F 2 "" H 6000 3400 50  0001 C CNN
+F 3 "" H 6000 3400 50  0001 C CNN
+	1    6000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3250 6000 3250
+Wire Wire Line
+	6000 3250 6000 3400
+$Comp
+L Device:C C?
+U 1 1 5F7715FA
+P 6850 2200
+F 0 "C?" H 6965 2246 50  0000 L CNN
+F 1 "10uF" H 6965 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6888 2050 50  0001 C CNN
+F 3 "~" H 6850 2200 50  0001 C CNN
+	1    6850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2050 6850 2050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F771E93
+P 6850 1650
+F 0 "#PWR?" H 6850 1500 50  0001 C CNN
+F 1 "+3.3V" H 6865 1823 50  0000 C CNN
+F 2 "" H 6850 1650 50  0001 C CNN
+F 3 "" H 6850 1650 50  0001 C CNN
+	1    6850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F77305A
+P 4250 1900
+F 0 "#PWR?" H 4250 1750 50  0001 C CNN
+F 1 "+3.3V" H 4265 2073 50  0000 C CNN
+F 2 "" H 4250 1900 50  0001 C CNN
+F 3 "" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F77318F
+P 4250 2150
+F 0 "R?" H 4318 2196 50  0000 L CNN
+F 1 "10K" H 4318 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4290 2140 50  0001 C CNN
+F 3 "~" H 4250 2150 50  0001 C CNN
+	1    4250 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2350 4250 2350
+Wire Wire Line
+	4250 2350 4250 2300
+Wire Wire Line
+	4250 2000 4250 1900
+Wire Wire Line
+	6850 2050 6850 1650
+Connection ~ 6850 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5F774389
+P 6850 2500
+F 0 "#PWR?" H 6850 2250 50  0001 C CNN
+F 1 "GND" H 6855 2327 50  0000 C CNN
+F 2 "" H 6850 2500 50  0001 C CNN
+F 3 "" H 6850 2500 50  0001 C CNN
+	1    6850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2350 6850 2500
+Text HLabel 7250 2850 2    50   Input ~ 0
+MCP_UTX
+Text HLabel 7250 2950 2    50   Input ~ 0
+MCP_URX
+Wire Wire Line
+	5750 2350 6500 2350
+Wire Wire Line
+	6500 2350 6500 2850
+Wire Wire Line
+	6500 2850 7250 2850
+Wire Wire Line
+	7250 2950 6400 2950
+Wire Wire Line
+	6400 2950 6400 2450
+Wire Wire Line
+	6400 2450 5750 2450
+$Comp
+L Regulator_Linear:TLV71333PDBV U?
+U 1 1 5F775786
+P 2800 5350
+F 0 "U?" H 2800 5692 50  0000 C CNN
+F 1 "TLV71333PDBV" H 2800 5601 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2800 5675 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv713p.pdf" H 2800 5400 50  0001 C CNN
+	1    2800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F7771CC
+P 3800 5000
+F 0 "#PWR?" H 3800 4850 50  0001 C CNN
+F 1 "+3.3V" H 3815 5173 50  0000 C CNN
+F 2 "" H 3800 5000 50  0001 C CNN
+F 3 "" H 3800 5000 50  0001 C CNN
+	1    3800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F777836
+P 1950 5150
+F 0 "#PWR?" H 1950 5000 50  0001 C CNN
+F 1 "+5V" H 1965 5323 50  0000 C CNN
+F 2 "" H 1950 5150 50  0001 C CNN
+F 3 "" H 1950 5150 50  0001 C CNN
+	1    1950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F778018
+P 1950 5900
+F 0 "#PWR?" H 1950 5650 50  0001 C CNN
+F 1 "GND" H 1955 5727 50  0000 C CNN
+F 2 "" H 1950 5900 50  0001 C CNN
+F 3 "" H 1950 5900 50  0001 C CNN
+	1    1950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F778D7E
+P 1950 5600
+F 0 "C?" H 2065 5646 50  0000 L CNN
+F 1 "10uF" H 2065 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1988 5450 50  0001 C CNN
+F 3 "~" H 1950 5600 50  0001 C CNN
+	1    1950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F77979B
+P 3800 5600
+F 0 "C?" H 3915 5646 50  0000 L CNN
+F 1 "10uF" H 3915 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3838 5450 50  0001 C CNN
+F 3 "~" H 3800 5600 50  0001 C CNN
+	1    3800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F779A45
+P 3800 5950
+F 0 "#PWR?" H 3800 5700 50  0001 C CNN
+F 1 "GND" H 3805 5777 50  0000 C CNN
+F 2 "" H 3800 5950 50  0001 C CNN
+F 3 "" H 3800 5950 50  0001 C CNN
+	1    3800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5250 2350 5250
+Wire Wire Line
+	1950 5250 1950 5150
+Wire Wire Line
+	1950 5250 1950 5450
+Connection ~ 1950 5250
+Wire Wire Line
+	2500 5350 2350 5350
+Wire Wire Line
+	2350 5350 2350 5250
+Connection ~ 2350 5250
+Wire Wire Line
+	2350 5250 1950 5250
+Wire Wire Line
+	1950 5750 1950 5900
+Wire Wire Line
+	3800 5950 3800 5750
+Wire Wire Line
+	3100 5250 3800 5250
+Wire Wire Line
+	3800 5250 3800 5000
+Wire Wire Line
+	3800 5250 3800 5450
+Connection ~ 3800 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5F77C76F
+P 2800 5900
+F 0 "#PWR?" H 2800 5650 50  0001 C CNN
+F 1 "GND" H 2805 5727 50  0000 C CNN
+F 2 "" H 2800 5900 50  0001 C CNN
+F 3 "" H 2800 5900 50  0001 C CNN
+	1    2800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5650 2800 5900
+$EndSCHEMATC
