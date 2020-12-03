@@ -240,12 +240,6 @@ F 3 "~" H 2200 3900 50  0001 C CNN
 	1    2200 3900
 	-1   0    0    1   
 $EndComp
-Text GLabel 1300 5250 0    50   Input ~ 0
-Out
-Text GLabel 2050 5250 0    50   Input ~ 0
-LEDA
-Text GLabel 3450 1900 2    50   Input ~ 0
-LEDA
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FC88D7B
@@ -259,10 +253,18 @@ F 3 "" H 3950 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 2000 3950 2000
-Text GLabel 3650 2100 2    50   Input ~ 0
-Out
 Wire Wire Line
 	3450 2100 3650 2100
-Text GLabel 3900 3850 0    50   Input ~ 0
+Text Label 3450 1900 0    50   ~ 0
+LEDA
+Text Label 1900 5250 0    50   ~ 0
+LEDA
+Wire Wire Line
+	1300 5250 1000 5250
+Text Label 1000 5250 0    50   ~ 0
+Out
+Text Label 3900 3850 0    50   ~ 0
+Out
+Text Label 3650 2100 0    50   ~ 0
 Out
 $EndSCHEMATC
