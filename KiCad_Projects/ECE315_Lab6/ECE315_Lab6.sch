@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Covid Temperature Sensor"
 Date "2020-11-29"
 Rev "v1.0"
@@ -37,4 +37,14 @@ U 5FC80C48
 F0 "TouchSensor.sch" 50
 F1 "TouchSensor.sch" 50
 $EndSheet
+$Sheet
+S 4350 4850 2100 2550
+U 5FC8BA1D
+F0 "TempSensor.sch" 50
+F1 "TempSensor.sch" 50
+$EndSheet
+Text HLabel 6450 5200 0    50   Input ~ 0
+SDA
+Text HLabel 6450 5350 0    50   Input ~ 0
+SCL
 $EndSCHEMATC
