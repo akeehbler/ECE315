@@ -1,0 +1,249 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "Touch Sensor"
+Date "2020-12-02"
+Rev "v1.0"
+Comp "UW-Madison"
+Comment1 "ECE315"
+Comment2 "Alec Keehbler"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 5FC88E47
+P 5700 3300
+F 0 "R1" V 5495 3300 50  0000 C CNN
+F 1 "10K" V 5586 3300 50  0000 C CNN
+F 2 "" V 5740 3290 50  0001 C CNN
+F 3 "~" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FC8B4F8
+P 5350 3600
+F 0 "C1" H 5465 3646 50  0000 L CNN
+F 1 "22nF" H 5465 3555 50  0000 L CNN
+F 2 "" H 5388 3450 50  0001 C CNN
+F 3 "~" H 5350 3600 50  0001 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3650 4900 3300
+Wire Wire Line
+	4900 3300 5350 3300
+Wire Wire Line
+	5350 3300 5350 3450
+Wire Wire Line
+	5350 3300 5550 3300
+Connection ~ 5350 3300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FC8EE54
+P 3250 3350
+F 0 "#PWR?" H 3250 3200 50  0001 C CNN
+F 1 "+3.3V" H 3265 3523 50  0000 C CNN
+F 2 "" H 3250 3350 50  0001 C CNN
+F 3 "" H 3250 3350 50  0001 C CNN
+	1    3250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FC93457
+P 3250 3950
+F 0 "C3" V 2950 3900 50  0000 L CNN
+F 1 "0.1uF" V 3050 3850 50  0000 L CNN
+F 2 "" H 3288 3800 50  0001 C CNN
+F 3 "~" H 3250 3950 50  0001 C CNN
+	1    3250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC93E7B
+P 3250 4400
+F 0 "#PWR?" H 3250 4150 50  0001 C CNN
+F 1 "GND" H 3255 4227 50  0000 C CNN
+F 2 "" H 3250 4400 50  0001 C CNN
+F 3 "" H 3250 4400 50  0001 C CNN
+	1    3250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4400 3250 4200
+Connection ~ 3250 4200
+Wire Wire Line
+	3250 4200 3250 4100
+Wire Wire Line
+	4050 3850 3900 3850
+$Comp
+L Sensor_Touch:AT42QT1010-TSHR U?
+U 1 1 5FC95F40
+P 4450 3750
+F 0 "U?" H 4450 4231 50  0000 C CNN
+F 1 "AT42QT1010-TSHR" H 4450 4140 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4500 3500 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001946A.pdf" H 4720 4300 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4200 4450 4050
+Wire Wire Line
+	3250 4200 4450 4200
+Wire Wire Line
+	3250 3350 3250 3450
+Wire Wire Line
+	4450 3450 3250 3450
+Connection ~ 3250 3450
+Wire Wire Line
+	3250 3450 3250 3800
+Wire Wire Line
+	4900 3650 4850 3650
+Wire Wire Line
+	5350 3850 5350 3750
+Wire Wire Line
+	4850 3850 5350 3850
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J?
+U 1 1 5FC93282
+P 3350 1900
+F 0 "J?" V 3125 1908 50  0000 C CNN
+F 1 "B4B-PH-K-S_LF__SN_" V 3216 1908 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 3550 2100 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3550 2200 60  0001 L CNN
+F 4 "455-1706-ND" H 3550 2300 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-PH-K-S(LF)(SN)" H 3550 2400 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 3550 2500 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 3550 2600 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3550 2700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 3550 2800 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2MM" H 3550 2900 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 3550 3000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3550 3100 60  0001 L CNN "Status"
+	1    3350 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC95128
+P 3550 2300
+F 0 "#PWR?" H 3550 2050 50  0001 C CNN
+F 1 "GND" H 3555 2127 50  0000 C CNN
+F 2 "" H 3550 2300 50  0001 C CNN
+F 3 "" H 3550 2300 50  0001 C CNN
+	1    3550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2200 3550 2200
+Wire Wire Line
+	3550 2200 3550 2300
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5FC98BB9
+P 2200 3900
+F 0 "JP?" H 2200 4013 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 2200 4104 50  0000 C CNN
+F 2 "" H 2200 3900 50  0001 C CNN
+F 3 "~" H 2200 3900 50  0001 C CNN
+	1    2200 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3650 2200 3650
+Wire Wire Line
+	2200 3650 2200 3750
+Wire Wire Line
+	2200 3750 2400 3750
+Wire Wire Line
+	2400 3750 2400 3900
+Connection ~ 2200 3750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FC9C33E
+P 2700 3850
+F 0 "#PWR?" H 2700 3700 50  0001 C CNN
+F 1 "+3.3V" H 2715 4023 50  0000 C CNN
+F 2 "" H 2700 3850 50  0001 C CNN
+F 3 "" H 2700 3850 50  0001 C CNN
+	1    2700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3900 2700 3900
+Wire Wire Line
+	2700 3900 2700 3850
+Connection ~ 2400 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5FC9D19A
+P 1600 3900
+F 0 "#PWR?" H 1600 3650 50  0001 C CNN
+F 1 "GND" H 1605 3727 50  0000 C CNN
+F 2 "" H 1600 3900 50  0001 C CNN
+F 3 "" H 1600 3900 50  0001 C CNN
+	1    1600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3900 1600 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5FC9DD85
+P 3750 5250
+F 0 "#PWR?" H 3750 5000 50  0001 C CNN
+F 1 "GND" H 3755 5077 50  0000 C CNN
+F 2 "" H 3750 5250 50  0001 C CNN
+F 3 "" H 3750 5250 50  0001 C CNN
+	1    3750 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FC9E328
+P 3050 5250
+F 0 "R2" V 2845 5250 50  0000 C CNN
+F 1 "1K" V 2936 5250 50  0000 C CNN
+F 2 "" V 3090 5240 50  0001 C CNN
+F 3 "~" H 3050 5250 50  0001 C CNN
+	1    3050 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 5250 3200 5250
+$Comp
+L Device:LED LED1
+U 1 1 5FC9FDBB
+P 2200 5250
+F 0 "LED1" H 2193 4995 50  0000 C CNN
+F 1 "LS T77K-J1L2-1-0-2-R18-Z" H 2200 5400 50  0000 C CNN
+F 2 "" H 2200 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2200 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 5250 2900 5250
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FCA13F3
+P 1450 5250
+F 0 "JP?" H 1450 5455 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1450 5364 50  0000 C CNN
+F 2 "" H 1450 5250 50  0001 C CNN
+F 3 "~" H 1450 5250 50  0001 C CNN
+	1    1450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5250 1600 5250
+$EndSCHEMATC
