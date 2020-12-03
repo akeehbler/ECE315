@@ -113,10 +113,10 @@ Wire Wire Line
 Wire Wire Line
 	4850 3850 5350 3850
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ JP1
 U 1 1 5FC93282
 P 3350 1900
-F 0 "J?" V 3125 1908 50  0000 C CNN
+F 0 "JP1" V 3125 1908 50  0000 C CNN
 F 1 "B4B-PH-K-S_LF__SN_" V 3216 1908 50  0000 C CNN
 F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 3550 2100 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3550 2200 60  0001 L CNN
@@ -147,26 +147,10 @@ Wire Wire Line
 	3450 2200 3550 2200
 Wire Wire Line
 	3550 2200 3550 2300
-$Comp
-L Jumper:SolderJumper_3_Open JP?
-U 1 1 5FC98BB9
-P 2200 3900
-F 0 "JP?" H 2200 4013 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 2200 4104 50  0000 C CNN
-F 2 "" H 2200 3900 50  0001 C CNN
-F 3 "~" H 2200 3900 50  0001 C CNN
-	1    2200 3900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4050 3650 2200 3650
 Wire Wire Line
 	2200 3650 2200 3750
-Wire Wire Line
-	2200 3750 2400 3750
-Wire Wire Line
-	2400 3750 2400 3900
-Connection ~ 2200 3750
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FC9C33E
@@ -182,7 +166,6 @@ Wire Wire Line
 	2400 3900 2700 3900
 Wire Wire Line
 	2700 3900 2700 3850
-Connection ~ 2400 3900
 $Comp
 L power:GND #PWR?
 U 1 1 5FC9D19A
@@ -234,11 +217,11 @@ $EndComp
 Wire Wire Line
 	2350 5250 2900 5250
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open SJ1
 U 1 1 5FCA13F3
 P 1450 5250
-F 0 "JP?" H 1450 5455 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1450 5364 50  0000 C CNN
+F 0 "SJ1" H 1450 5455 50  0000 C CNN
+F 1 "LED" H 1450 5364 50  0000 C CNN
 F 2 "" H 1450 5250 50  0001 C CNN
 F 3 "~" H 1450 5250 50  0001 C CNN
 	1    1450 5250
@@ -246,4 +229,40 @@ F 3 "~" H 1450 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 5250 1600 5250
+$Comp
+L Jumper:SolderJumper_3_Bridged12 SJ2
+U 1 1 5FC85CBF
+P 2200 3900
+F 0 "SJ2" H 2200 4013 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 2200 4104 50  0000 C CNN
+F 2 "" H 2200 3900 50  0001 C CNN
+F 3 "~" H 2200 3900 50  0001 C CNN
+	1    2200 3900
+	-1   0    0    1   
+$EndComp
+Text GLabel 1300 5250 0    50   Input ~ 0
+Out
+Text GLabel 2050 5250 0    50   Input ~ 0
+LEDA
+Text GLabel 3450 1900 2    50   Input ~ 0
+LEDA
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FC88D7B
+P 3950 2000
+F 0 "#PWR?" H 3950 1850 50  0001 C CNN
+F 1 "+3.3V" H 3965 2173 50  0000 C CNN
+F 2 "" H 3950 2000 50  0001 C CNN
+F 3 "" H 3950 2000 50  0001 C CNN
+	1    3950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2000 3950 2000
+Text GLabel 3650 2100 2    50   Input ~ 0
+Out
+Wire Wire Line
+	3450 2100 3650 2100
+Text GLabel 3900 3850 0    50   Input ~ 0
+Out
 $EndSCHEMATC
